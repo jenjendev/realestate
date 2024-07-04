@@ -218,3 +218,10 @@ ul li {
         margin: 0.3rem;
     }
 }
+@media (max-width: 780px) {
+    header .left-head nav .close img {
+        float: right;
+        height: 35px;
+        width: auto;
+    }
+}
