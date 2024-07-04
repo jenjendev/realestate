@@ -1,0 +1,220 @@
+body {
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+p,
+span,
+i,
+li {
+    font-size: 1.39rem;
+}
+
+.card-wrapper-room {
+    margin: 0 auto;
+    width: 90vw;
+    align-items: center;
+    margin: 3rem;
+}
+
+.img-display {
+    overflow: hidden;
+    width: 100%;
+}
+
+.img-showcase {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    transition: all 0.5s ease;
+}
+
+.img-showcase img {
+    min-width: 100%;
+}
+
+.img-select {
+    display: flex;
+    width: 100%;
+}
+
+.img-item {
+    margin: 0.1rem;
+    flex: 1;
+}
+
+.img-item img {
+    width: 100%;
+}
+
+.img-item:hover {
+    opacity: 0.7;
+}
+
+.hotel-content {
+    padding: 3rem 1rem;
+}
+
+.hotel-title {
+    position: relative;
+}
+
+.hotel-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 80px;
+    background-color: black;
+}
+
+.hotel-ratings {
+    color: yellow;
+    margin-top: 1rem;
+}
+
+.hotel-ratings span {
+    color: #000;
+    font-weight: 800;
+}
+
+.hotel-price {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.last-price span {
+    color: red;
+    text-decoration: line-through;
+}
+
+.new-price span {
+    color: blue;
+}
+
+ul li {
+    list-style: none;
+}
+
+.hotel-detail .fas {
+    color: rgb(247, 94, 6);
+    padding-right: 0.5rem;
+}
+
+.book {
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    background-color: rgb(255, 157, 0);
+    color: white;
+    border: none;
+    border-radius: 90px;
+}
+
+.social-links {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.social-links p {
+    font-size: 2rem;
+    padding-right: 2rem;
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    border: 1px solid black;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 992px) {
+    .card-room {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .card-wrapper-room {
+        width: 95vw;
+        margin: 1rem;
+    }
+
+    .hotel-content {
+        padding: 2rem 1rem;
+    }
+
+    .img-showcase {
+        height: 300px;
+    }
+
+    .hotel-title::after {
+        width: 60px;
+    }
+
+    .hotel-price {
+        font-size: 2rem;
+    }
+
+    .book {
+        padding: 0.5rem 1rem;
+    }
+
+    .social-links a {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card-room {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hotel-title {
+        font-size: 1.8rem;
+    }
+
+    .hotel-ratings span {
+        font-size: 1.5rem;
+    }
+
+    .hotel-detail p {
+        font-size: 1.3rem;
+    }
+
+    .hotel-price {
+        font-size: 2rem;
+    }
+
+    .book {
+        font-size: 1.8rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .social-links p {
+        padding-right: 1rem;
+    }
+
+    .social-links a {
+        width: 30px;
+        height: 30px;
+        margin: 0.3rem;
+    }
+}
